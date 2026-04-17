@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7bc5b374-3f08-4102-9af0-082e14a975eb" name="Changes" comment="">
+    <list default="true" id="7bc5b374-3f08-4102-9af0-082e14a975eb" name="Changes" comment="Capter 2 &gt; part 2 in progress">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Python_noob_club.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python_noob_club.py" afterDir="false" />
     </list>
@@ -145,12 +145,20 @@
       <option name="project" value="LOCAL" />
       <updated>1775999487007</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Capter 2 &gt; part 2 in progress">
+      <created>1776252257852</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1776252257852</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Complete first chapter Stepic python" />
-    <option name="LAST_COMMIT_MESSAGE" value="Complete first chapter Stepic python" />
+    <MESSAGE value="Capter 2 &gt; part 2 in progress" />
+    <option name="LAST_COMMIT_MESSAGE" value="Capter 2 &gt; part 2 in progress" />
   </component>
 </project>

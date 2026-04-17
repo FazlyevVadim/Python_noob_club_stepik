@@ -384,3 +384,61 @@ upC = programmUp.count('C')
 lengs = len(programmUp)
 print(((upG + upC) / lengs) * 100)
 
+#Slaicing
+dna = 'ATTCGGAGCT'
+dna[1] = 'T'
+dna[1:4] = 'TTC' #4 индекс не влючительно
+dna[:4] = 'ATTC' #Считается с 0 до 4 индекса не включительно
+dna[4:] = 'GGAGCT' #Начиная с 4 индекса и до конца строки
+dna[-4:] = 'AGCT' #Считается индекс с конца и потом опять слева на право
+dna[1:-1] = 'TTCGGAGC' # с индекса один до конца индекса -1 не включительно
+dna[1:-1:2] = 'TCGG' #индекса начала и индекс конца с шагом 2
+dna[::-1] = 'ATTCGGAGCT'  #символы в обратном порядке с отрицательным шагом
+# a = 'CAGGTGGAC'   b = 'GATTACA'
+# Нужно выяснить является ли значение полиндромом
+s = input()
+i = 0
+j = len(s-1)
+is_palindrome = True
+while i < j:
+    if s[i] != s[j]:
+        is_palindrome = False
+    i += 1
+    j -= 1
+    if is_palindrome:
+        print('YES')
+    else:
+        print('NO')
+
+#Короткое решение поиска полиндрома
+s =input()
+r = s [::-1]
+if s == r:
+    print('YES')
+else:
+    print('NO')
+
+#Задание 2
+s = 'abcdefghijk'
+s[3:6] = 'def'
+s[:6] = 'abcdef'
+s[3:] = 'defghijk'
+s[::-1] = 'kjihgfedcba'
+s[-3:] = 'ijk'
+s[:-6] = 'abcde'
+s[-1:-10:-2] = 'kigec'
+
+#Задача 3
+s = input('Введите буквы: ')
+count = 1
+n = len(s)
+for i in range(n-1):
+    if s[i] == s[i+1]:
+        count += 1
+    elif s[i] != s[i+1]:
+        print(s[i] + str(count), end='')
+        count = 1
+print(s[-1] +str(count),end='' )
+
+# Степик 2.5 (Список)
+
