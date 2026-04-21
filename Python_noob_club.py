@@ -440,5 +440,120 @@ for i in range(n-1):
         count = 1
 print(s[-1] +str(count),end='' )
 
-# Степик 2.5 (Список)
+# Степик 2.5 (Список list)
 
+students=['Ivan', 'Masha', 'Sasha']
+for student in students:
+    print('hello,' + student + '!' )
+students[0] = Ivan
+students[1] = Masha
+students[2] = Sasha
+
+#Доступ к элементам списка
+students = ['ivan', 'Masha', 'Sasha']
+len(student) #Длина списка
+students[0] = Ivan, students[-1] = Sasha
+students[1] = Masha, students[-2] = Masha
+students[2] = Sasha, students[-3] = Ivan
+students[:2] = 0,1 ,Ivan, Masha
+students[::-1] #все элементы списка с конца в начало
+#Операции со списком сложением и умножение
+students1['Ivan']
+techers1['Sergey']
+students1 + teachers1 ['Ivan', 'Srgey']
+
+[0, 1] * 4
+[0, 1, 0, 1, 0, 1, 0, 1]
+
+#Изменение значений элементов списка
+students=['Ivan', 'Masha', 'Sasha']
+students[1] = 'Oleg'
+print(students) #['Ivan', 'Oleg', 'Sasha']
+
+#Добавление элементов в список
+students=['Ivan', 'Masha', 'Sasha']
+students.append('Olga') #Элемент будет добавлен в конце списка
+students+=['Olga'] #Добавит еще одну 'Olga' в список
+students+=['Boris', 'Srgey'] #Добавлены оба элмента в конец
+students = [] #Создание пустого списка
+students.insert[1, 'Olga'] #Позиция в которую встовляем элемент и что вставляем
+
+#Задача 1
+#сколько элементов будет содержать список  students
+students = ['Ivan', 'Masha', 'Sasha']
+students += ['Olga']
+students += 'Olga'
+#Ответ 8, последнее имя добавить каждую букву под своим индексом в конец
+
+#Удаление элемента из списка
+students = ['Ivan', 'Masha', 'Sasha']
+students.remove('Sasha') #Удалит значение из списка первое с таким имененем
+del students[0]  #Удалить именно тот индекс элемента в списке
+
+#Поиск элементов в списке
+students = ['Ivan', 'Masha', 'Sasha']
+if 'Ivan' in students: #Элемент в списке
+    print('Ivan is here')
+if 'Ann' not in students: #Элемент не в списке
+    print('Ann is out')
+
+ind=students.index('Sasha') #Поиска индекса в списке, если эл несколько, то первую позицию
+ind=students.index('Ann') #Если нет в списке, получим ошибку
+
+#Сортировка списка
+students = ['Sasha', 'Ivan', 'Masha']
+order_students=sorted(students) #результат ['Ivan', 'Masha', 'Sasha']
+students.sort()  #min/max  #нужно что бы все элементы списка были сравнимы
+students.reverse() #Список в обратном порядке  тоже самое students [::-1]
+
+#Присвоение списков
+a = [1, 'A', 2]
+b = a
+a[0] = [42]
+значение
+a: [42, 'А', 2]
+b: [[42, 'А', 2]]
+b[2]= [30]
+значение
+a = [42, 'А', 30]
+b = [42, 'А', 30]
+
+#Задание 2
+a = [1, 2, 3]
+b = a
+# значения списка b?
+
+a[1] = 10
+# значения списка b?
+
+b[0] = 20
+# значения списка a?
+
+a = [5, 6]
+# значения списка b?
+
+# 1 2 3; 1 10 3; 20 10 3; 20 10 3
+
+#Генерация списоков
+a = [0] * 5 #[0 0 0 0 0]
+a = [0 for i in range(5)] # [0 0 0 0 0]
+a = [i * i for i in range(5)] #квадрат каждого числа списка 0 = 0 1 = 2 2 = 4 3 =9 4 = 16
+a = [int(i) for i in input().split()] #разделит строку по пробелам и дальше к каждой части применяем преобразование str в int
+
+#Задача 3
+a = input().split()
+num = [int(i) for i in a]
+plus = sum(num)
+print(plus)
+
+#Задача 4
+a = [int(i) for i in input().split()]
+n = len(a)
+if len(a) == 1:
+    print(a[0], end='')
+else:
+    for j in range(n - 1):
+        print(a[j+1] + a[j-1], end=" ")
+    print(a[-2] + a[0])
+
+#Задача 5
