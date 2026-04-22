@@ -159,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1776427652666</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Capter 2 &gt; part 2.5 last lesson">
+      <created>1776777467030</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1776777467030</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -167,6 +174,7 @@
     <MESSAGE value="Complete first chapter Stepic python" />
     <MESSAGE value="Capter 2 &gt; part 2 in progress" />
     <MESSAGE value="Capter 2 &gt; part 2.4 Done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Capter 2 &gt; part 2.4 Done" />
+    <MESSAGE value="Capter 2 &gt; part 2.5 last lesson" />
+    <option name="LAST_COMMIT_MESSAGE" value="Capter 2 &gt; part 2.5 last lesson" />
   </component>
 </project>
