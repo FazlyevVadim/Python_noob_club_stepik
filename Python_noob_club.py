@@ -583,3 +583,36 @@ a = [[0]* n for i in range(n)] # Независимые списки
 a = [[0 for j in range(n)] for i in range(n)] #Независимые списки
 
 # Степик 2.6 (Поиск минимума в списке)
+#5 8 4 3 5 7  =  min(m) = 3 или решение снизу
+a = [int(i) for i in input().split()] #4 7 3 8
+m = a[0]
+for x in a:
+    if m > x:
+        m = x
+print(m)
+
+#Сапер
+n, m, k  = (int(i) for i in input().split())
+a = [[0 for j in range(m)] for i in range(n)]
+for i in range(k):
+    row, kol = (int(i) - 1 for i in input().split())
+    a[row][kol] = -1
+for i in range(n):
+    for j in range(m):
+        if a[i][j] == 0:
+            for di in range(-1, 2):
+                for dj in range(-1, 2):
+                    ai = i + di
+                    aj = j + dj
+                    if 0 <= ai < n and 0 <= aj < m and a[ai][aj] == -1:
+                        a[i][j] += 1
+for i in range(n):
+    for j in range(m):
+        if a[i][j] == -1:
+            print('*', end ='')
+        elif a[i][j] != 0:
+            print('.', end='')
+        else:
+            print(a[i][j], end='')
+    print()
+
