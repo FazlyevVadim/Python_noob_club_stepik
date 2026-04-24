@@ -592,7 +592,7 @@ for x in a:
 print(m)
 
 #Сапер
-n, m, k  = (int(i) for i in input().split())
+n, m, k = (int(i) for i in input().split())
 a = [[0 for j in range(m)] for i in range(n)]
 for i in range(k):
     row, kol = (int(i) - 1 for i in input().split())
@@ -610,9 +610,27 @@ for i in range(n):
     for j in range(m):
         if a[i][j] == -1:
             print('*', end ='')
-        elif a[i][j] != 0:
+        elif a[i][j] == 0:
             print('.', end='')
         else:
             print(a[i][j], end='')
     print()
 
+#Задача 1
+s = res = 0
+while True:
+    n = int(input())
+    s += n
+    res += n ** 2
+    if s == 0:
+        break
+print(res)
+
+#Задача 2
+a = int(input())
+numbers = [[a] * a for a in range(1, a + 1)]
+print(numbers)
+flat_list = sum(numbers, [])
+print(*flat_list[:a])
+
+#Задача 3
