@@ -634,3 +634,14 @@ flat_list = sum(numbers, [])
 print(*flat_list[:a])
 
 #Задача 3
+a = [int(i) for i in input('Список чисел: ').split()]
+b = int(input('Число два: '))
+found = False
+for i in range(len(a)):
+    if b == a[i]:
+        print(i, end=' ')
+        found = True
+if not found:
+    print('Отсутствует')
+
+#Задача 4
