@@ -645,3 +645,27 @@ if not found:
     print('Отсутствует')
 
 #Задача 4
+matrix = []
+while True:
+    line = input()
+    if line == 'end':
+        break
+    matrix.append([int(x) for x in line.split()])
+def sum_neighbors(matrix):
+    rows = len(matrix)
+    cols = len(matrix[0])
+    new_matrix = [[0 for j in range(cols)] for i in range(rows)]
+    for i in range(rows):
+        for j in range(cols):
+            neighbor_sum = 0
+            for di, dj in [(-1, 0), (1, 0), (0, -1), (0, 1)]:
+                ni = (i + di + rows) % rows
+                nj = (j + dj + cols) % cols
+                neighbor_sum += matrix[ni][nj]
+            new_matrix[i][j] = neighbor_sum
+    return new_matrix
+result = sum_neighbors(matrix)
+for row in result:
+    print(*row)
+
+#Задача 5

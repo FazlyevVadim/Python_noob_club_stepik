@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7bc5b374-3f08-4102-9af0-082e14a975eb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python_noob_club.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python_noob_club.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1777064514734</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Capter 2 &gt; 2.6 home work &gt; Lesson 3 Done">
+      <created>1777130337488</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1777130337488</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -198,6 +206,7 @@
     <MESSAGE value="Capter 2 &gt; part 2.5 done &gt; 2.6 Start" />
     <MESSAGE value="Capter 2 &gt; 2.6 home work" />
     <MESSAGE value="Capter 2 &gt; 2.6 home work &gt; Lesson 2 Done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Capter 2 &gt; 2.6 home work &gt; Lesson 2 Done" />
+    <MESSAGE value="Capter 2 &gt; 2.6 home work &gt; Lesson 3 Done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Capter 2 &gt; 2.6 home work &gt; Lesson 3 Done" />
   </component>
 </project>
