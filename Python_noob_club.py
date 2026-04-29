@@ -697,3 +697,95 @@ for row in matrix:
     print(*row)
 
 # Степик 3.1 (Функции)
+def min2(a, b):    #функция def потом название произвольное
+    if a<=b:       # min(min(25,42),30)
+        return a
+    else:
+        return
+#Задание 1
+def f(n):
+    return n * 10 + 5
+#Введите её в интерпретаторе и посчитайте, чему равно значение следующего выражения:
+print(f(f(f(10)))) #10555
+
+#Различные функции
+#Без возвращения значения
+#Без параметров
+#Произвольное число параметров
+def min(*a):
+    m=a[0]
+    for x in a:
+        if m>x:
+            m=x
+    return m
+#Параметры со значением поумолчанию
+def my_range(start, stop, step=1):
+    res=[]
+    if step > 0:
+        x=start
+        while x< stop:
+            res += [x]
+            x += step
+    elif step < 0:
+        x = start
+        while x> stop:
+            res +=[x]
+            x+= step
+    return res
+#Локальные переменные
+def init_values():
+    a = 100
+    b = 100
+init_values()
+print(a + b)  #Вызовет ошибку а и b не объявлены
+#Изменение локальных переменных
+def init_values():
+    a = 100
+a = 0
+init_values()
+print(a) #ответ 0
+
+def init_values(a):
+    a = 100
+b = 0
+init_values(b)
+print(b) #ответ 0
+
+#Изменение объектов, связанных с локальными переменными
+def appen_zero(xs):
+    xs.append(0)
+a=[]
+appen_zer(a)
+print(a) #ответ [0]
+
+#Глобальные переменные
+def print_value():
+    print(a)
+a=5
+print_value() # ответ 5
+
+def print_value():
+    print(a)
+    a = 10
+    print(a)
+a=5
+print_value() # ответ будет ошибка
+
+#Задача 2
+def f(x):
+    if x <= - 2:
+        return 1 - (x+2) ** 2
+    if -2 < x <= 2:
+        return - x / 2
+    if 2 < x:
+        return (x - 2) ** 2 + 1
+
+#Задача 3
+def modify_list(l):
+    new_list = []
+    for x in l:
+        if x % 2 == 0:
+            new_list.append(x // 2)
+    l[:] = new_list
+
+# Степик 3.2 (Словари)
