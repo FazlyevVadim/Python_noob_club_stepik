@@ -789,3 +789,53 @@ def modify_list(l):
     l[:] = new_list
 
 # Степик 3.2 (Словари)
+#Множества
+s=set()
+basket={'apple', 'orange', 'apple', 'pear', 'apple'}
+print(basket) #распечатает тольео 1 элемент из множества
+'orange' in basket #True
+'python' in basket #False
+#Операции с множеством
+s.add(element)
+s.remove(element)
+s.discard(element)
+s.clear(element)
+#перебор элементов множества
+basket={'apple', 'orange', 'apple', 'pear', 'apple'}
+for x in basket:
+    print(x)
+# banana apple orange pear вывелось 1 значение из списка и не по порядку
+
+#Словари
+dict, {} #Создаие словаря
+d = {'a': 239,10 : 100} #Словарь с 2 парами
+print(d['a'])
+print(d[10])
+#Операции со словарями
+dictionary = {...}
+key in dictionary #Есть ли ключ в словаре True/False
+key not in dictionary
+dictionary[key] = value #Добавить ключ-значение в словарь
+dictionary[key] #Если ключа нет, ошибка
+dictionary.get(key) #Можем использовать тут, что бы не было ошибки
+del dictionary[key] #Удалить элменты из словаря ключ-значение
+
+#Перебор элементов словаря
+d ={'c':14, 'A':12, 'T':9, 'G':18}
+for key in d:
+    print(key, end='') #получим все ключи словаря
+for key in d.keys():
+    print(key, end='') #получим все ключи словаря
+for value in d.values():
+    print(value, end='') #получим все элементы, 2 значение в паре
+for key, value in d.items():
+    peint(key,value, end=';') #получим пары элементов и разделим через точка запятая
+
+#Задача 1
+def update_dictionary(d, key, value):
+    if key in d:
+        d[key].append(value)
+    elif (2 * key) in d:
+        d[key*2].append(value)
+    else:
+        d[key*2] = [value]
