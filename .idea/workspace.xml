@@ -54,7 +54,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.Delenie">
+  <component name="RunManager" selected="Python.Lessons">
     <configuration name="Delenie" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python_noob_project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -215,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1777486583712</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Capter 2 &gt; 3.1 Done &gt; Start 3.2">
+      <created>1777557321411</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1777557321411</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

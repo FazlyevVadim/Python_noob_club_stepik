@@ -839,3 +839,11 @@ def update_dictionary(d, key, value):
         d[key*2].append(value)
     else:
         d[key*2] = [value]
+
+#Задача 2
+from collections import Counter
+a = input('Введите буквы: ').lower().split()
+counter = Counter(a)
+for word, count in counter.items():
+    print(f"{word} {count}")
+
