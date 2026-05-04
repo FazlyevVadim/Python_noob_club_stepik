@@ -229,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1777561262269</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Capter 2 &gt; 3.3 + 3.4 Done &gt; 3.5">
+      <created>1777910325561</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1777910325561</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -246,6 +253,7 @@
     <MESSAGE value="Capter 2 &gt; 2.6 home work &gt; Lesson 5 Done &#10;Start chapter 3.1" />
     <MESSAGE value="Capter 2 &gt; 3.1 Done &gt; Start 3.2" />
     <MESSAGE value="Capter 2 &gt; 3.2 lesson 1/2 Done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Capter 2 &gt; 3.2 lesson 1/2 Done" />
+    <MESSAGE value="Capter 2 &gt; 3.3 + 3.4 Done &gt; 3.5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Capter 2 &gt; 3.3 + 3.4 Done &gt; 3.5" />
   </component>
 </project>

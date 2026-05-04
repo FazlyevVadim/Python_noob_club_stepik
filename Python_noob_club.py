@@ -990,3 +990,41 @@ with open(input_file, 'r', encoding='utf-8') as f_in, \
 
 
 # Степик 3.5 (Модули, подключение подулей)
+#Импорт модуля
+Название_файла.py
+import my_module
+my_module.foo()
+
+#Импорт 1 функции из модуля
+from my_module import foo
+foo()
+#Импорт всех функций в модуле
+from my_module import *
+foo()
+#Импорт функции из модуля и обращаться по другому имени
+from my_module import foo as my_foo
+my_foo()
+
+#Модуль sys
+sys.argv # список аргументов командной строки
+import sys
+print(len(sys.args))
+
+#Модуль subprocess
+subprocess.call(args,stdin=None, stdout=None,stderr=None, shell=None, timeout=None) #Запускает программу в соответствии с аргументами (args)
+#Дожидается выполняется и возвращает код возврата
+subprocess.call(['pyhton','-h'])
+
+#Задача 1
+import math
+a = float(input('Введите радиус: ')) #ввод радиуса
+z = 2 * math.pi * a
+print(z)
+
+#Задача 2
+import sys
+for i in sys.argv[1:]:
+    print(i, end=" ")
+
+# Степик 3.6 (Установка доп модулей)
+
