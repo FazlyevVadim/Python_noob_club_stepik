@@ -7,6 +7,8 @@
 # / - деление вещественное (числа после запятой тоже покажут)
 
 # Степик 1.7 (Типы данных)
+import os
+
 print (int(2.99))
 print (int(-1.6))
 print(9**19 - int(float(9**19)))
@@ -847,3 +849,144 @@ counter = Counter(a)
 for word, count in counter.items():
     print(f"{word} {count}")
 
+#Задача 3
+my_dict = {}
+n = int(input())
+for i in range(n):
+    x = int(input())
+    if x in my_dict:
+        print(my_dict[x])
+    else:
+        result = f(x)
+        my_dict[x] = result
+        print(result)
+
+# Степик 3.3 Интерпритатор (установка/Запуск)
+# создаем текстовый файл расширения .py, через терминал в идее заходим в папку где лежит файл, и набираем
+# python название файла ентер
+
+# Степик 3.4 (Файловый ввод/вывод)
+inf = open('text.file', 'r') #Открывает файл ключ r - открываем файл на прочтение
+s1 = inf.readline() # чтение построчно
+s2 = inf.readline()
+inf.close() # Завершает чтение
+
+with open('text.file') as inf: #Запуск чтения файла и автоматическое зарытие
+    s1 = inf.readline()
+    s2 = inf.readline()
+
+s = inf.readline().strip() #Убирает служебные символы при чтении файла
+'\t abc \n'.strip()   # 'abc'
+
+os.path.join('.', 'dirname', 'filename.txt') #полный путь к файлу
+'./dirname/filename.txt'
+
+#Построчное чтение файлов
+with open('input.text') as inf:
+    for line in inf:
+        line = line.strip()
+        print(line)
+
+#Запись в файл
+ouf =open('file.text', 'w')  #ключ w - запись
+ouf.write('some text \n')
+ouf.write(str(25))
+ouf.close()
+
+with open('some.text', 'w') as ouf: #автоматически закроет после записи
+    ouf.write('some text \n' )
+    ouf.write(str(25))
+
+#Задание 1
+#Скачиваем файл ( каждый раз генерится с новыми данными)
+#Пишем код что бы считать строку из файла
+with open('/Users/c0ldeyes/IdeaProjects/Python_noob_project/dataset_3363_2-2.txt', 'r', encoding='utf-8') as inf:
+    line = inf.readline()
+    print(f"Считанная строка: {line.strip()}")
+#Дальце циклом разбираем строку из файла обратно A2D3 = AADDD в таком виде
+#Создаем файл руками или можно написать программу, которая создать файл с этими данными
+#После генерации файла у вас есть 5 минут что бы загрузить новый файл для ответа в Степик
+
+#Задача 2
+def main():
+    # Укажите имя вашего файла
+    filename = "input.txt"
+
+    try:
+        with open('название_файла.txt', "r", encoding="utf-8") as f:
+            # read() считывает весь файл, split() разбивает его на слова
+            # по любым пробельным символам (пробел, \n, \t и т.д.)
+            words = f.read().split()
+    except FileNotFoundError:
+        print(f"Ошибка: файл '{'название_файла'}' не найден.")
+        return
+
+    if not words:
+        print("Файл пуст или не содержит слов.")
+        return
+
+    # Подсчёт частоты каждого слова
+    counts = {}
+    for word in words:
+        counts[word] = counts.get(word, 0) + 1
+
+    # Поиск слова с максимальной частотой
+    best_word = None
+    max_count = 0
+
+    for word, count in counts.items():
+        # Обновляем ответ, если нашли большую частоту
+        # или такую же частоту, но слово лексикографически меньше
+        if count > max_count or (count == max_count and word < best_word):
+            max_count = count
+            best_word = word
+
+    print(f"{best_word} {max_count}")
+
+if __name__ == "__main__":
+    main()
+
+#Задание 3
+# Имена файлов
+input_file = 'dataset_3363_4.txt'
+output_file = 'answer.txt'
+
+with open(input_file, 'r', encoding='utf-8') as f_in, \
+        open(output_file, 'w', encoding='utf-8') as f_out:
+
+    sum_math = 0
+    sum_phys = 0
+    sum_rus = 0
+    count = 0
+
+    for line in f_in:
+        line = line.strip()
+        if not line:
+            continue
+
+        # Разделяем строку по точке с запятой
+        parts = line.split(';')
+        # parts[0] - фамилия, parts[1] - математика, parts[2] - физика, parts[3] - русский
+        m = int(parts[1])
+        p = int(parts[2])
+        r = int(parts[3])
+
+        # Средний балл абитуриента
+        avg_student = (m + p + r) / 3
+        f_out.write(f"{avg_student}\n")
+
+        # Накопление сумм для общих средних
+        sum_math += m
+        sum_phys += p
+        sum_rus += r
+        count += 1
+
+    # Итоговые средние баллы по предметам
+    if count > 0:
+        avg_math = sum_math / count
+        avg_phys = sum_phys / count
+        avg_rus = sum_rus / count
+        f_out.write(f"{avg_math} {avg_phys} {avg_rus}")
+
+
+# Степик 3.5 (Модули, подключение подулей)
