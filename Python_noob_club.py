@@ -1027,4 +1027,38 @@ for i in sys.argv[1:]:
     print(i, end=" ")
 
 # Степик 3.6 (Установка доп модулей)
+import requests
+r = requests.get('htttp//:example.com') #Простой гет запрос
+print(r.text)
 
+
+url = 'http://example.com'
+par = {'key1': 'value1','key2': 'value2'} #Передача параметров
+r = requests.get(url, params=par)
+print(r.url) #Формирование уры с учетом параметров гет запроса
+
+url = 'http://httpbin.org/cookies'
+cookies = {'cookies_are': 'working'}
+r = requests.get(url, cookies=cookies) #отправка сформированных куки на сервер
+print(r.text)
+print (r.cookies['example_cookies_name']) #Использовать куки полуенные от сервера
+
+#Задача 1
+
+url = "https://stepik.org/media/attachments/course67/3.6.2/870.txt"
+z = requests.get(url)
+print(z.text.strip().splitlines())
+count = len(z.text.strip().splitlines())
+print(count)
+
+#Задача 2
+url = "https://stepik.org/media/attachments/course67/3.6.3/843785.txt"
+z = requests.get(url)
+text = z.text
+while len(text) <= 10:
+    url = "https://stepik.org/media/attachments/course67/3.6.3/" + (text)
+    z = requests.get(url)
+    text = z.text
+    print(z.text)
+else:
+    print(z.text)
